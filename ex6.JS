@@ -1,12 +1,14 @@
 // Exercício 6: Verificação de idade
 // Escreva um programa que solicita o ano de nascimento de uma pessoa e verifica se ela é maior de 18 anos. 
 // Exiba uma mensagem indicando se a pessoa é maior de idade ou não.
-let age = parseInt(prompt("Insira sua idade:"))
+let year = parseInt(prompt("Insira o ano que você nasceu:"))
 
-if (age > 18 ) {
+let age = 2024 - year
+
+if (age >= 18 ) {
     alert("Maior de idade")
 }
 
-else if (age < 18 ) {
+else {
     alert("Menor de idade")
 }
