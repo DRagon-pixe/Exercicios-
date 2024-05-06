@@ -11,9 +11,9 @@ let notaA = (score + score2 + score3 + score4 )/4
 if (notaA > 7.0) {
     alert("APROVADO")
 }
-if (notaA < 5.0) {
-    alert("REPROVADO")
-}
-if (notaA < 7.0 && notaA > 5.0) {
+else if (notaA < 7.0 && notaA > 5.0) {
     alert("RECUPERADO")
+}
+else {
+    alert("REPROVADO")
 }

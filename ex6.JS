@@ -6,7 +6,7 @@ let year = parseInt(prompt("Insira o ano que você nasceu:"))
 let age = 2024 - year
 
 if (age >= 18 ) {
-    alert("Maior de idade")
+    alert("Você é maior de idade")
 }
 
 else {
