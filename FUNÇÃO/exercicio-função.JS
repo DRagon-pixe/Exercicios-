@@ -92,27 +92,26 @@ while (num != 0) {
 }
 }
 
-let opcao = prompt("Escolha uma opção: \n1 - Exemplo do nome e senha de usuário \n2 - Exemplo da média de nota de auluno \n3 - Exemplo de IMC \n4 - Exemplo de tabuada \n5 -  Exemplo de Idade \n6 - Exemplo de decresimo de número")
+let opcaoDigitada;
 
-while (opcao > 0) {
-    switch (opcao) {
-        case "1":
-            exemplo1();
-            break;
-        case "2":
-            exemplo2();
-            break;
-        case "3":
-            exemplo3();
-            break;
-        case "4":
-            exemplo4();
-            break;
-        case "5":
-            exemplo5();
-            break;
-        case "6":
-            exemplo6();
-            break;
-    } opcao = prompt("Escolha uma opção: \n1 - Exemplo do nome e senha de usuário \n2 - Exemplo da média de nota de auluno \n3 - Exemplo de IMC \n4 - Exemplo de tabuada \n5 -  Exemplo de Idade \n6 - Exemplo de decresimo de número")
-}
+do {
+    opcaoDigitada = prompt("MENU \nEscolha uma opção: \n1 - Exemplo do nome e senha de usuário \n2 - Exemplo da média de nota de auluno \n3 - Exemplo de IMC \n4 - Exemplo de tabuada \n5 -  Exemplo de Idade \n6 - Exemplo de decresimo de número \n Digite 0 para fechar o menu")
+
+    if (opcaoDigitada == "0") {
+        alert("Você escolheu sair")
+    } else if (opcaoDigitada == "1") {
+        exemplo1();
+    } else if (opcaoDigitada == "2") {
+        exemplo2();
+    } else if (opcaoDigitada == "3") {
+        exemplo3();
+    } else if (opcaoDigitada == "4") {
+        exemplo4();
+    } else if (opcaoDigitada == "5") {
+        exemplo5();
+    } else if (opcaoDigitada == "6") {
+        exemplo6();
+    } else {
+        alert("Esse exercício não existe!")
+    } 
+} while (opcaoDigitada != "0")
