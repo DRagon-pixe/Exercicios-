@@ -94,31 +94,25 @@ while (num != 0) {
 
 let opcao = prompt("Escolha uma opção: \n1 - Exemplo do nome e senha de usuário \n2 - Exemplo da média de nota de auluno \n3 - Exemplo de IMC \n4 - Exemplo de tabuada \n5 -  Exemplo de Idade \n6 - Exemplo de decresimo de número")
 
-switch (opcao) {
-    case "1":
-        exemplo1;
-        break;
-    
-    case "2":
-        exemplo2;
-        break;
-    
-    case "3":
-        exemplo3;
-        break;
-    
-    case "4":
-        exemplo4;
-        break;
-    
-    case "5":
-        exemplo5;
-        break;
-    
-    case "6":
-        exemplo6;
-        break;
-
-    default:
-        break;
+while (opcao > 0) {
+    switch (opcao) {
+        case "1":
+            exemplo1();
+            break;
+        case "2":
+            exemplo2();
+            break;
+        case "3":
+            exemplo3();
+            break;
+        case "4":
+            exemplo4();
+            break;
+        case "5":
+            exemplo5();
+            break;
+        case "6":
+            exemplo6();
+            break;
+    } opcao = prompt("Escolha uma opção: \n1 - Exemplo do nome e senha de usuário \n2 - Exemplo da média de nota de auluno \n3 - Exemplo de IMC \n4 - Exemplo de tabuada \n5 -  Exemplo de Idade \n6 - Exemplo de decresimo de número")
 }
